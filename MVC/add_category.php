@@ -1,6 +1,5 @@
 <?php
-   include 'header.php';
-    include 'controllers/CategoryController.php';
+    require_once 'controllers/CategoryController.php';
 	
     
 ?>
@@ -31,4 +30,3 @@
 		</form>
 	</body>
 </html>
-<?php include 'footer.php'; ?>

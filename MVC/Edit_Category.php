@@ -1,6 +1,6 @@
 <?php
-    include 'header.php';
-    include 'controllers/CategoryController.php';
+    
+    require_once 'controllers/CategoryController.php';
 	$id=$_GET["id"];
 	$c=getCategory($id);
     
@@ -15,6 +15,7 @@
 			<td>  <b>Edit Catagory </b></td>
 				<tr>
 					<td>Name</td>
+					<td><input type="hidden" name="id" value="<?php echo $c["id"]; ?>" > </td>
 					<td>: <input type="text" name="name" value="<?php echo $c["name"]; ?>" > </td>
 					<td><span> <?php echo $err_name;?> </span></td>
 				</tr>
@@ -32,4 +33,3 @@
 		</form>
 	</body>
 </html>
-<?php include 'footer.php'; ?>

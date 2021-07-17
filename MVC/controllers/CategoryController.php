@@ -1,5 +1,5 @@
 <?php
-    include 'models/db_config.php';
+    require_once 'models/db_config.php';
 	$name="";
 	$err_name="";
 	$hasError=false;
@@ -24,6 +24,26 @@ if(isset($_POST["add_category"])){
 			$err_db=$rs;
 		}
 		}
+		elseif(isset($_POST["edit_category"])){
+	      if(empty($_POST["name"])){
+			$hasError = true;
+			$err_name="Name Required";
+		}
+		
+		else{
+			$name =$_POST["name"];
+	
+		}
+		if(!$hasError){
+		$rs = editCategory($name,$_POST["id"]);
+		if($rs === true){
+			header("Location: allcategories.php");
+		}
+		$err_db = $rs;
+		}
+		
+	}
+	
 		
 		
 		function insertCategory($name){
@@ -41,4 +61,10 @@ if(isset($_POST["add_category"])){
 			$rs=get($query);
 			return $rs[0];
 		}
+		function editCategory($name, $id){
+		$query = "update categories set name='$name' where id=$id";
+		return execute($query);
+		
+	}
+	
 ?>

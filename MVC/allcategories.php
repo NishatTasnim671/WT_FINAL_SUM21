@@ -1,6 +1,6 @@
 <?php
-    include 'header.php';
-    include 'controllers/CategoryController.php';
+    require_once 'header.php';
+    require_once 'controllers/CategoryController.php';
 	$categories=getAllCategories();
 	
     
