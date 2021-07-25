@@ -13,11 +13,7 @@
 			return $rs;
 		}
 		
-		/*function getCategory($id){
-			$query="select * from categories where id=$id";
-			$rs=get($query);
-			return $rs[0];
-		}*/
+		
 		
 	
 	

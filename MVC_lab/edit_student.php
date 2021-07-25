@@ -5,6 +5,9 @@
 	$departments=getAllDepartments();
 	$id=$_GET["id"];
 	$s=getStudent($id);
+	
+	
+	
     
 ?>
 <html>
@@ -17,15 +20,14 @@
 			<td>  <b>Edit Student </b></td>
 				<tr>
 					<td>Name</td>
-					<td><input type="hidden" name="id" value="<?php echo $s["id"]; ?>" > </td>
+					<input type="hidden" name="id" value="<?php echo $s["id"]; ?>" >
 					<td>: <input type="text" name="name" value="<?php echo $s["name"]; ?>" > </td>
 					<td><span> <?php echo $err_name;?> </span></td>
-					
-				
-				</tr>
+             	</tr>
+		
 				<tr>
-				    <td>Date of Birth:</td>
-					<td>: <input type="text" name="dob" value="<?php echo $dob; ?>" > </td>
+				<td> Date of Birth:</td>;
+				<td>: <input type="text" name="dob" value="<?php echo $dob; ?>" > </td>
 					<td><span> <?php echo $err_dob;?> </span></td>
 				</tr>
 				<tr>
@@ -35,12 +37,15 @@
 				</tr>
 				<tr>
 					<td>CGPA:</td>
+					
+		     
 					<td>: <input type="text" name="cgpa" value="<?php echo $cgpa; ?>" > </td>
 					<td><span> <?php echo $err_cgpa;?> </span></td>
 				</tr>
 				
 				<tr>
 				    <td>Deparment:</td>
+					
 					<td><select name="dept_id" value="<?php echo $dept_id; ?>">
 					<option selected disabled>Choose Deparment</option>
 					<?php
@@ -55,7 +60,7 @@
 				
 				
 				<tr>
-					<td colspan="2" align="right"> <input type="submit" name="edit_student" value="Edit Product"> </td>
+					<td colspan="2" align="right"> <input type="submit" name="edit_student" value="Edit Student"> </td>
 					
 				</tr>
 				</table>
