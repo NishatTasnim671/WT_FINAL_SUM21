@@ -1,3 +1,4 @@
+
 <?php
     require_once 'models/db_config.php';
 	$name="";
@@ -11,6 +12,7 @@
 	$desc="";
 	$err_desc="";
 	$img="";
+	$key="";
 	
 	$hasError=false;
 	$err_db="";
@@ -157,7 +159,11 @@
 		return execute($query);
 	}
 		
-	
+	function searchProduct($key){
+		$query="select id,name from products where name like '%$key%'";
+		$rs=get($query);
+		return $rs;
+	}
 	
 ?>	
 	

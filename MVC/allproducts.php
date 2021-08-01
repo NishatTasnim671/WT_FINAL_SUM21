@@ -1,5 +1,5 @@
 <?php
-    require_once 'header.php';
+    
     require_once 'controllers/ProductController.php';
 	$products=getProducts();
 	
@@ -8,9 +8,11 @@
 <html>
 	<head></head>
 	<h3>All Products</h3>
+	<input type="text" placeholder="Search" onkeyup="searchProduct(this)">
 	<table>
 	<thead>
 	    <th>Sl#</th>
+		<th>image</th>
 		<th>Name</th>
 		<th>Category </th>
 		<th> Price</th>
@@ -34,7 +36,7 @@
 		  echo "</tr>";
 		  $i++;
 	}
-	include 'footer.php';
+	
 	?>
 	</tbody>
 	</table>
