@@ -12,7 +12,7 @@
 	$desc="";
 	$err_desc="";
 	$img="";
-	$key="";
+	
 	
 	$hasError=false;
 	$err_db="";

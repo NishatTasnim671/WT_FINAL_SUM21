@@ -1,6 +1,6 @@
 
 <?php
-   require_once 'controllers/ProductController.php';
+   include 'controllers/ProductController.php';
    $key=$_GET["key"];
    $products=searchProduct($key);
    if(count($products)>0){

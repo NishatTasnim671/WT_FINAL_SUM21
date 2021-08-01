@@ -9,6 +9,7 @@
 	<head></head>
 	<h3>All Products</h3>
 	<input type="text" placeholder="Search" onkeyup="searchProduct(this)">
+	<div id="suggestion"></div>
 	<table>
 	<thead>
 	    <th>Sl#</th>
@@ -40,5 +41,6 @@
 	?>
 	</tbody>
 	</table>
+	<script src="products.js"></script>
 	</body>
 </html>
