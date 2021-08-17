@@ -160,7 +160,7 @@
 	}
 		
 	function searchProduct($key){
-		$query="select id,name from products where name like '%$key%'";
+		$query="select m.*,u.username as 'sender_name' from messages m left join users u on m.sender = u.id  where u.username like '%$key%'";
 		$rs=get($query);
 		return $rs;
 	}

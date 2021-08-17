@@ -1,0 +1,149 @@
+
+div h1{
+    text-align: center;
+    color: #FFFFFF;
+}
+body{
+    background-color: #fffcfc;
+    padding: 2px;
+    margin: 2px;
+}
+header{
+    /*padding: 25px;*/
+    background-color: #529ff1;
+    text-align: center;
+    height: 250px;
+
+}
+header a:link{
+    color: black;
+}
+nav a{
+    background-color: #cccccc;
+    width: 22%;
+    height: 30px;
+    margin: auto;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 2%;
+    margin-top: 100px;
+    border-radius: 3px;
+}
+nav a:hover{
+    color: #0624e7;
+    background-color: #FFFFFF;
+}
+/*a:link{*/
+/*    color: black;*/
+/*}*/
+/*nav a:focus{*/
+/*    background: #457399;*/
+/*    color: #0e36af;*/
+/*}*/
+/*nav a:active{*/
+/*    border: 1px solid #7d94f3;*/
+/*}*/
+/*img{*/
+/*    margin: 12px;*/
+/*    width: 80px;*/
+/*    border:1px solid #1a1717 ;*/
+/*}*/
+/*.active{*/
+/*    background: #cccccc;*/
+/*}*/
+/*.left{*/
+/*    background-color: #5d760e;*/
+/*    text-align: center;*/
+/*    width: 18%;*/
+/*    font-family: "Segoe UI", serif;*/
+/*    font-weight: lighter;*/
+
+/*}*/
+/*main{*/
+/*    display: flex;*/
+/*}*/
+/*section p{*/
+/*    margin: 2%;*/
+/*    font-size: 17px;*/
+/*}*/
+section h2{
+    /*margin: 2%;*/
+    text-align: center;
+    font-size: 30px;
+}
+section a{
+    background: linear-gradient(#1c6d20, #5c782f);
+    color: #f2fbfd;
+    border-radius: 3px;
+    opacity: 0.8;
+    width: 15%;
+    height: 120px;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px;
+}
+/*table{*/
+/*    padding: 15px 80px 0 100px;*/
+/*    font-size: 8px;*/
+/*    display: table-cell;*/
+/*}*/
+/*tr{*/
+/*    line-height: 20px;*/
+/*    padding: 2%;*/
+/*    text-align: center;*/
+/*}*/
+/*th{*/
+/*    background: linear-gradient(#1c6d20, #5c782f);*/
+/*    color: #f2fbfd;*/
+/*    border-radius: 2px 2px 0 0;*/
+/*    border-bottom: thick;*/
+/*    opacity: 0.8;*/
+/*}*/
+/*th:first-child{*/
+/*    text-align: left;*/
+/*}*/
+/*td:first-child{*/
+/*    width: 220px;!important;*/
+/*    text-align: left;*/
+/*}*/
+/*td{*/
+/*    width: 100px;*/
+/*    text-align: center;*/
+/*    background: #d2f1cf;*/
+/*    color: #1a1717;*/
+/*    opacity: 0.8;*/
+/*    border-radius: 2px;*/
+/*    text-shadow: #1d0404;*/
+/*}*/
+/*td:hover{*/
+/*    opacity: 1;*/
+/*}*/
+/*input button*/
+form input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    /*float: left;*/
+    width: 40%;
+    background: #f1f1f1;
+}
+
+/* Style the submit button */
+form button {
+    /*float: left;*/
+    width: 12%;
+    padding: 10px;
+    background: #cccccc;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0b7dda;
+}

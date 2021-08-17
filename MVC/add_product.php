@@ -47,8 +47,8 @@
 				</tr>
 				<tr>
 					<td>Image</td>
-					<td>: <input type="file" name="p_image" value="<?php echo $terget; ?>" > </td>
-                    <td><span> <?php echo $err_terget;?> </span></td>
+					<td>: <input type="file" name="p_image" value="<?php echo $img; ?>" > </td>
+                  
 				</tr>
 				
 				

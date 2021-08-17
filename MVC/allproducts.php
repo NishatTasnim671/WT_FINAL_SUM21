@@ -32,7 +32,7 @@
 		  echo "<td>".$p["c_name"]."</td>";
 		  echo "<td>".$p["price"]."</td>";
 		  echo "<td>".$p["qty"]."</td>";
-		  echo '<td><a href="Edit_Product.php?id='.$p["id"].'">Edit</a></td>';
+		  echo '<td><a href="Edit_Product.php?id='.$p["id"].'" >Edit</a></td>';
 		  echo "<td>Delete</td>";
 		  echo "</tr>";
 		  $i++;
